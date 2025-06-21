@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(247, 234, 218);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px black solid
+}
+
+.block {
+    border: 1px black solid;
+    background-color: white;
+}
+
+.create-new-grid {
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    width: 100px;
+    height: 50px;
+    color: olivedrab;
+    background-color: yellow;
+    border-radius: 10%;
+    font-size: 24px;
+}
