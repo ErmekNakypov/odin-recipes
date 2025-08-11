@@ -1,0 +1,143 @@
+@font-face {
+    font-family: 'Norsebold';
+    src: url("assets/Norsebold.otf");
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    font-family: 'Times New Roman', Times, serif;
+    height: 100%;
+}
+
+:root {
+    --shadow: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.sidebar {
+    padding-top: 30vh;
+    padding-bottom: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url("/assets/bg_image.avif");
+    height: 100%;
+    width: 40vw;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+    display: block;
+    height: 150px;
+}
+
+.logo-text {
+    font-family: Norsebold;
+    font-size: 100px;
+    color: white;
+}
+
+.credit {
+    color: white;
+}
+
+.main {
+    flex: 1;
+    background-color: rgb(248, 248, 248);
+
+}
+
+.form-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 24px;
+    font-weight: 550;
+    height: 30vh;
+    padding: 50px;
+}
+
+.form {
+    background-color: white;
+    padding: 20px 50px;
+    box-shadow: var(--shadow);
+}
+
+.form p {
+    font-size: 24px;
+    font-weight: 550;
+}
+
+.input-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 16px;
+    border-style: none;
+    padding: 30px 0;
+}
+
+label, input {
+    display: block;
+}
+
+input {
+    border: 1px solid rgb(219, 219, 219);
+    border-radius: 2%;
+    width: 300px;
+    height: 30px;
+    padding: 3px;
+    font-size: medium;
+}
+
+input[type="password"]:invalid {
+    border-color: red;
+}
+
+.form:focus-within {
+    --shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.form-container {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+a {
+    text-decoration: none;
+    color: green;
+}
+
+.form-footer {
+    padding: 20px 50px;
+}
+
+.submit-button {
+    border-style: none;
+    color: white;
+    background-color: #596D48;
+    width: 200px;
+    border-radius: 5%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
